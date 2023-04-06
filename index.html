@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">        
+</head>
+<body>
+    <main id="hero">
+        <section class="hero-image" id="hero-image">
+            <img src="images/twitter.jpeg" alt="" srcset="">
+        </section>
+        <section class="hero-inner" id="hero-inner">
+           
+            <article class="hero-option" id="hero-option">
+                <img src="images/Normal.png" alt="" class="img-logo">
+                <h1>Happening now</h1>
+                <h4>Join Twitter today.</h4>
+                <div class="controls">
+                   <button class="btn-sign-up" id="btn-sign-up">Sign up</button>
+                   <button class="btn-log-in" id="btn-log-in">Log in</button> 
+                </div>
+            </article>
+            <article class="hero-sign-up" id="hero-sign-up">
+                <img src="images/TwitterLogo.png" alt="" class="img-logo">
+                <h2>Join Twitter today.</h2>
+                <form action="">
+                    
+                    <input type="text" 
+                    required
+                    name="txtname"
+                    id="txtName">
+                    <label class="lblName" for="txtName">Name</label>
+                  
+                    <input type="email"
+                    required
+                    name="txtEmail" 
+                    id="txtEmail">
+                    <label class="lblEmail" for="txtEmail">Email Address</label>
+
+                    <input type="password" 
+                    required
+                    name="txtPassword" 
+                    id="txtPassword">
+                    <label class="lblPassword" for="txtPassword">Password</label>
+                </form>
+                <p>By signing up, you agree that you accept our <a href="" class="terms">Terms and Condition</a></p>
+                <button class="btn-sign-in" id="btn-sign-in">Sign up</button>
+            </article>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
