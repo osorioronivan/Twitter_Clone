@@ -4,7 +4,7 @@ body, html, *{
     box-sizing: border-box;
     font-family: 'SF Pro Display', sans-serif;
 }
-main{
+#hero{
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -14,6 +14,7 @@ main{
 }
 .hero-image{
     width: 60%;
+    display: flex;
 }
 .hero-image img{
     width: 100%;
@@ -21,6 +22,7 @@ main{
     object-fit: cover;
 }
 .hero-inner{
+    display: flex;
     width: 40%;
     background-color: #161616;
     color: #ffffff;
@@ -74,59 +76,48 @@ h4{
     transition:  1s ease-in-out;
     color: #161616;
 }
-form{
-    position: relative;
-    margin-top: em;
-    display: flex;
-    flex-direction: column;
-    color: #161616;
-}
-.lblName{
-    position: absolute;
-    top: 43px;
-    left: 20px;
-}
-
-.lblEmail{
-    position: absolute;
-    top: 148px;
-    left: 20px;
-}
-
-.lblUserName{
-    position: absolute;
-    top: 248px;
-    left: 20px;
-}
-
-
-.lblPassword{
-    position: absolute;
-    top: 350px;
-    left: 20px;
-}
-
 
 
 
 input:focus + label,
-input:valid + label,
-#txtEmail:not(:placeholder-shown) + label{
+input:not(:placeholder-shown) + label{
     transform: translateY(-1.2em);
     transition: .3s ease-in-out;
     font-weight: bold;
 }
-
-
-form input{
+form{
+    position: relative;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    color: #161616;
+}
+.formGroup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1em;
+}
+.formGroup label{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.textboxState{
     border: none;
     border-radius: 10px;
     background-color: #f4f4f4;
-    margin: 1em 0;
     padding: 2em 20px 20px 20px;
     font-size: 1em;
 }
-
+.formGroup small{
+    margin-left: 20px;
+    margin-top:.5em ;
+    color: red;
+    font-size:1em;
+    font-weight: 100;
+}
 .terms{
     color: #1D9BF0;
 }
@@ -150,6 +141,8 @@ form input{
 }
 
 .error{
-    border: 2px solid red;
-    color: red;
+    border: 2px solid #e74c3c;
+}
+.errorFont{
+    color: #e74c3c;
 }
