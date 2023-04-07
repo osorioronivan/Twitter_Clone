@@ -27,9 +27,8 @@
             <article class="hero-sign-up" id="hero-sign-up">
                 <img src="images/TwitterLogo.png" alt="" class="img-logo">
                 <h2>Join Twitter today.</h2>
-                <form action="">
-                    
-                    <input type="text" 
+                <form class="frm-Sign-In" id="frm-Sign-In" action="">
+                    <input type="text"  
                     required
                     name="txtname"
                     id="txtName">
@@ -37,18 +36,26 @@
                   
                     <input type="email"
                     required
+                    placeholder=" "
                     name="txtEmail" 
                     id="txtEmail">
-                    <label class="lblEmail" for="txtEmail">Email Address</label>
+                    <label id="lblEmail" class="lblEmail" for="txtEmail">Email Address</label>
 
+                    <input type="text" 
+                    required
+                    name="txtUserName"
+                    id="txtUserName">
+                    <label class="lblUserName" for="txtUserName">Username</label>
+                  
                     <input type="password" 
                     required
                     name="txtPassword" 
                     id="txtPassword">
                     <label class="lblPassword" for="txtPassword">Password</label>
+                    <p>By signing up, you agree that you accept our <a href="" class="terms">Terms and Condition</a></p>
+                    <button class="btn-sign-in" id="btn-sign-in">Sign up</button>
                 </form>
-                <p>By signing up, you agree that you accept our <a href="" class="terms">Terms and Condition</a></p>
-                <button class="btn-sign-in" id="btn-sign-in">Sign up</button>
+
             </article>
         </section>
     </main>

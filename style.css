@@ -71,7 +71,7 @@ h4{
 #hero-sign-up{
     display: none;
     margin: 10em;
-    transition: 1s ease-in-out;
+    transition:  1s ease-in-out;
     color: #161616;
 }
 form{
@@ -93,17 +93,28 @@ form{
     left: 20px;
 }
 
-.lblPassword{
+.lblUserName{
     position: absolute;
-    top: 250px;
+    top: 248px;
     left: 20px;
 }
 
 
+.lblPassword{
+    position: absolute;
+    top: 350px;
+    left: 20px;
+}
+
+
+
+
 input:focus + label,
-input:valid + label{
+input:valid + label,
+#txtEmail:not(:placeholder-shown) + label{
     transform: translateY(-1.2em);
     transition: .3s ease-in-out;
+    font-weight: bold;
 }
 
 
@@ -136,4 +147,9 @@ form input{
 
 .hero-sign-up p, h2{
     margin-top: 1em;
+}
+
+.error{
+    border: 2px solid red;
+    color: red;
 }
