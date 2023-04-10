@@ -1,0 +1,242 @@
+body, html, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+}
+#hero{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.column-direction{
+    flex-direction:row-reverse;
+}
+.hero-image{
+    display: flex;
+    width: 55vw;
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-inner{
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    background-color: #161616;
+    color: #ffffff;
+}
+.img-logo{
+    height: 30px;
+    width: 35px;
+}
+
+.hero-inner article{
+    margin: 20px 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 2.5em;
+}
+h4{
+    margin: 1em 0 1em 0;
+    font-size: 2em;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+}
+.btn-sign-up{
+    margin: .5em;
+    border:none;
+    border-radius: 52px;
+    padding: 15px;
+    width: 80%;
+    color: #ffffff;
+    background-color: #1D9BF0;
+    font-size: 17px;
+}
+.btn-sign-up:hover{
+    background-color: #63bffd;
+    cursor: pointer;
+}
+.btn-log-in{
+    margin: .5em;
+    border: 1px solid #1D9BF0;
+    border-radius: 52px;
+    padding: 15px;
+    width: 80%;
+    color: #ffffff;
+    background-color: #161616;
+    font-size: 17px;
+}
+.btn-log-in:hover{
+    background-color: #474747a7;
+    cursor: pointer;
+}
+
+#hero-sign-up{
+    display: none;
+    margin: 50px;
+    transition:  1s ease-in-out;
+    color: #161616;
+}
+
+
+
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    transform: translateY(-1.2em);
+    transition: .3s ease-in-out;
+    font-weight: bold;
+}
+form{
+    position: relative;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    color: #161616;
+    transition: .3s ease-in-out;
+  
+}
+.formGroup input{
+    transition: 1s ease-in-out;
+}
+.formGroup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1em;
+}
+.formGroup label{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.textboxState{
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    padding: 2em 20px 20px 20px;
+    font-size: 1em;
+}
+.formGroup small{
+    margin-left: 20px;
+    margin-top:.5em ;
+    color: red;
+    font-size:1em;
+    font-weight: 100;
+}
+.terms{
+    color: #1D9BF0;
+}
+.btn-sign-in{
+    align-self: center;
+    border:none;
+    border-radius: 52px;
+    padding: 15px;
+    width: 70%;
+    color: #ffffff;
+    background-color: #1D9BF0;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.btn-sign-in:hover{
+    background-color: #63bffd;
+    cursor: pointer;
+}
+.hero-sign-up h2{
+    margin-top: 20px;
+}
+.hero-sign-up p{
+    align-self: center;
+    margin-top: 20px;
+}
+
+.error{
+    border: 2px solid #e74c3c;
+}
+.errorFont{
+    color: #e74c3c;
+}
+
+.modal{
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(22, 22, 22);
+}
+.modal-title{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.modal-inner{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding: 20px;
+}
+.modal-close{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-close-modal{
+    color: #f4f4f4;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    
+}
+.modal-content{
+    display: flex;
+    color: #f4f4f4;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal-content p{
+    font-weight:100;
+}
+.modal-controls{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.btn-modal-get-started{
+    border: none;
+    border-radius: 52px;
+    width: 80%;
+    height: 50px;
+    background-color: #1D9BF0;
+    font-size: 17px;
+    color: #ffffff;
+}
+@media only screen and (max-width: 576px) {
+    .hero-image{
+        display: none;
+    }
+    .hero-inner{
+        width: 100%;
+    }
+    .modal{
+        width: 100%;
+        bottom: 0;
+        top: unset; 
+        left: unset; 
+    transform: translate(0%);
+    border-radius: 25px 25px 0 0;
+    }
+ 
+}

@@ -1,0 +1,159 @@
+body, html, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+}
+#hero{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.column-direction{
+    flex-direction:row-reverse;
+}
+.hero-image{
+    display: flex;
+    width: 60%;
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-inner{
+    display: flex;
+    width: 40%;
+    background-color: #161616;
+    color: #ffffff;
+}
+
+.hero-inner article{
+    margin: 7em 2em;
+}
+h1{
+    font-size: 5em;
+}
+h4{
+    margin: 1em 0 1em 0;
+    font-size: 2em;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+}
+.btn-sign-up{
+    margin: .5em;
+    border:none;
+    border-radius: 52px;
+    padding: 15px;
+    width: 20em;
+    color: #ffffff;
+    background-color: #1D9BF0;
+    font-size: 17px;
+}
+.btn-sign-up:hover{
+    background-color: #63bffd;
+    cursor: pointer;
+}
+.btn-log-in{
+    margin: .5em;
+    border: 1px solid #1D9BF0;
+    border-radius: 52px;
+    padding: 15px;
+    width: 20em;
+    color: #ffffff;
+    background-color: #161616;
+    font-size: 17px;
+}
+.btn-log-in:hover{
+    background-color: #474747a7;
+    cursor: pointer;
+}
+#hero-sign-up{
+    display: none;
+    margin: 10em;
+    transition:  1s ease-in-out;
+    color: #161616;
+}
+
+
+
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    transform: translateY(-1.2em);
+    transition: .3s ease-in-out;
+    font-weight: bold;
+}
+form{
+    position: relative;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    color: #161616;
+    transition: .3s ease-in-out;
+  
+}
+.formGroup input{
+    transition: 1s ease-in-out;
+}
+.formGroup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1em;
+}
+.formGroup label{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.textboxState{
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    padding: 2em 20px 20px 20px;
+    font-size: 1em;
+}
+.formGroup small{
+    margin-left: 20px;
+    margin-top:.5em ;
+    color: red;
+    font-size:1em;
+    font-weight: 100;
+}
+.terms{
+    color: #1D9BF0;
+}
+.btn-sign-in{
+    border:none;
+    border-radius: 52px;
+    padding: 15px;
+    width: 100%;
+    color: #ffffff;
+    background-color: #1D9BF0;
+    font-size: 17px;
+}
+.btn-sign-in:hover{
+    background-color: #63bffd;
+    cursor: pointer;
+}
+.hero-sign-up h2{
+    margin-top: 1em;
+}
+.hero-sign-up p{
+    margin-top: 1em;
+}
+
+.error{
+    border: 2px solid #e74c3c;
+}
+.errorFont{
+    color: #e74c3c;
+}
+@media only screen and (min-width: 576px) {
+    .hero-image{
+        display: none;
+    }
+}
