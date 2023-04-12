@@ -1,7 +1,7 @@
 const tweetsData = [   
     {
         handle: `@TrollBot66756542 💎`,
-        profilePic: `images/troll.jpg`,
+        profilePic: `images/troll.jpeg`,
         likes: 27,
         retweets: 10,
         tweetText: `Buy Bitcoin, ETH Make 💰💰💰 low low prices. 
@@ -13,7 +13,7 @@ const tweetsData = [
     },    
     {
         handle: `@Elon ✅`,
-        profilePic: `images/musk.png`,
+        profilePic: `images/musk.jpeg`,
         likes: 6500,
         retweets: 234,
         tweetText: `I need volunteers for a one-way mission to Mars 🪐. No experience necessary🚀`,
@@ -35,7 +35,7 @@ const tweetsData = [
     },
         {
         handle: `@NoobCoder12`,
-        profilePic: `images/flower.png`,
+        profilePic: `images/flower.jpeg`,
         likes: 10,
         retweets: 3,
         tweetText: `Are you a coder if you only know HTML?`,
